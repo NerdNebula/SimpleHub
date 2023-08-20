@@ -2,7 +2,7 @@ local Games = {};
 local Universal = "";
 
 if Games[game.GameId] then
-  return
+  loadstring(game:HttpGet(Games[game.GameId]))()
 else
   loadstring(game:HttpGet(Universal))()
 end
